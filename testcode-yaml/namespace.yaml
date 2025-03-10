@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: testcode-namespace
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-1"  # 만들고 시작했지만, yaml 파일로 있어도 됨

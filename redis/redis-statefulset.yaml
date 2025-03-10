@@ -26,7 +26,7 @@ spec:
     - metadata:
         name: redis-storage
       spec:
-        storageClassName: redis-ebs-sc  # 위에서 만든 StorageClass 사용
+        storageClassName: redis-ebs-sc-test  # 위에서 만든 StorageClass 사용
         accessModes:
           - ReadWriteOnce  # EBS는 한 Pod에서만 사용 가능
         resources:

@@ -2,6 +2,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: testcode-ingress
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
   namespace: testcode-namespace
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing   # 내부용이면 "internal"

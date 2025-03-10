@@ -4,4 +4,4 @@ metadata:
   name: rds-sa
   namespace: testcode-namespace
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::707677861059:role/RdsConnectIRSARole
+    eks.amazonaws.com/role-arn: arn:aws:iam::707677861059:policy/RdsConnectIRSAPolicy

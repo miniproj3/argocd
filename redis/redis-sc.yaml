@@ -2,6 +2,8 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: redis-ebs-sc-test
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 provisioner: ebs.csi.aws.com
 volumeBindingMode: WaitForFirstConsumer  # Pod가 할당될 때까지 대기
 allowVolumeExpansion: true               # 필요 시 볼륨 크기 확장 가능

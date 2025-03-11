@@ -1,4 +1,4 @@
-# values.yaml
+# Helm 설정값
 global:
   storageClass: "redis-ebs-sc"
 

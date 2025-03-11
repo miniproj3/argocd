@@ -1,8 +1,7 @@
-# StorageClass 정의
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: redis-ebs-sc
+  name: redis-sc
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 provisioner: ebs.csi.aws.com

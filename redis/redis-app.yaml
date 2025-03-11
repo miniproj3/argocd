@@ -9,15 +9,14 @@ metadata:
 spec:
   project: redis-test   # 기본 : default
   source:
-    # 1. Helm 차트 소스 설정
-    chart: redis
-    repoURL: https://charts.bitnami.com/bitnami  # 공식 Helm 저장소
-    targetRevision: 18.4.0  # 차트 버전
+    repoURL: https://github.com/miniproj3/argocd.git  # 사용자 values.yaml이 있는 Git 저장소
+    targetRevision: main                              # 브랜치 또는 태그
+    path: ./redis                                     # Helm chart가 있는 디렉토리 경로
     
     # 2. 사용자 values.yaml 적용
     helm:
       valueFiles:
-        - https://github.com/miniproj3/argocd.git/main/redis/values.yaml  # 원격 values.yaml 경로
+        - values.yaml  # Git 저장소 내의 values.yaml 경로
       
       # 3. 추가 파라미터 (필요시)
       parameters:

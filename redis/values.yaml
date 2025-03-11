@@ -63,7 +63,7 @@ backup:
     size: 5Gi
   s3:
     enabled: true  # S3 업로드 활성화
-    bucket: "your-redis-backup-bucket"
+    bucket: "redis-backup-bucket-hi"
     region: "ap-northeast-2"
     lifecycleRule: |
       {
@@ -115,7 +115,7 @@ backup:
 logging:
   s3:
     enabled: true
-    bucket: "your-redis-logs-bucket"
+    bucket: "redis-backup-bucket-hi"
     region: "ap-northeast-2"
     uploadInterval: "daily"  # hourly/daily/weekly
   fluentbit:  # Fluent Bit 통합

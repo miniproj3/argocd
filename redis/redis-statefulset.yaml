@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: redis
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
   namespace: redis
 spec:
   serviceName: redis

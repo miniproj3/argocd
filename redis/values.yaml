@@ -59,7 +59,7 @@ backup:
   enabled: true
   schedule: "0 3 * * *"  # 매일 03:00 실행
   storage:
-    storageClass: redis-ebs-sc-test
+    storageClass: redis-ebs-sc
     size: 5Gi
   s3:
     enabled: true  # S3 업로드 활성화

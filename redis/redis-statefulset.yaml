@@ -7,7 +7,7 @@ metadata:
   namespace: redis
 spec:
   serviceName: redis
-  replicas: 3                        # Redis Pod 3개 생성 (각 파드마다 전용 EBS 볼륨 부착됨)
+  replicas: 1                        # Redis Pod 3개 생성 (각 파드마다 전용 EBS 볼륨 부착됨)
   selector:
     matchLabels:
       app: redis
